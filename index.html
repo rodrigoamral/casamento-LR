@@ -1,0 +1,1666 @@
+  <!--
+    ============================================================
+    LEMBRETE DE SE FOR COLOCAR CODIGO NO GPT TIRAR O CODIGO DO PIX 
+    LEMBRETE DE SE FOR COLOCAR CODIGO NO GPT TIRAR O CODIGO DO PIX 
+    LEMBRETE DE SE FOR COLOCAR CODIGO NO GPT TIRAR O CODIGO DO PIX 
+    LEMBRETE DE SE FOR COLOCAR CODIGO NO GPT TIRAR O CODIGO DO PIX 
+    LEMBRETE DE SE FOR COLOCAR CODIGO NO GPT TIRAR O CODIGO DO PIX 
+    LEMBRETE DE SE FOR COLOCAR CODIGO NO GPT TIRAR O CODIGO DO PIX 
+    LEMBRETE DE SE FOR COLOCAR CODIGO NO GPT TIRAR O CODIGO DO PIX 
+    LEMBRETE DE SE FOR COLOCAR CODIGO NO GPT TIRAR O CODIGO DO PIX 
+    LEMBRETE DE SE FOR COLOCAR CODIGO NO GPT TIRAR O CODIGO DO PIX 
+    LEMBRETE DE SE FOR COLOCAR CODIGO NO GPT TIRAR O CODIGO DO PIX 
+    LEMBRETE DE SE FOR COLOCAR CODIGO NO GPT TIRAR O CODIGO DO PIX 
+    LEMBRETE DE SE FOR COLOCAR CODIGO NO GPT TIRAR O CODIGO DO PIX 
+    LEMBRETE DE SE FOR COLOCAR CODIGO NO GPT TIRAR O CODIGO DO PIX 
+    LEMBRETE DE SE FOR COLOCAR CODIGO NO GPT TIRAR O CODIGO DO PIX 
+    LEMBRETE DE SE FOR COLOCAR CODIGO NO GPT TIRAR O CODIGO DO PIX 
+    LEMBRETE DE SE FOR COLOCAR CODIGO NO GPT TIRAR O CODIGO DO PIX 
+    LEMBRETE DE SE FOR COLOCAR CODIGO NO GPT TIRAR O CODIGO DO PIX 
+    LEMBRETE DE SE FOR COLOCAR CODIGO NO GPT TIRAR O CODIGO DO PIX 
+    LEMBRETE DE SE FOR COLOCAR CODIGO NO GPT TIRAR O CODIGO DO PIX 
+    LEMBRETE DE SE FOR COLOCAR CODIGO NO GPT TIRAR O CODIGO DO PIX 
+    LEMBRETE DE SE FOR COLOCAR CODIGO NO GPT TIRAR O CODIGO DO PIX 
+    LEMBRETE DE SE FOR COLOCAR CODIGO NO GPT TIRAR O CODIGO DO PIX 
+    LEMBRETE DE SE FOR COLOCAR CODIGO NO GPT TIRAR O CODIGO DO PIX 
+    ============================================================
+  -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Nosso Casamento | Larissa & Rodrigo</title>
+
+  <!--
+    ============================================================
+    FONTE
+    ============================================================
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    /* =========================================================
+       CONFIGURAÇÕES GERAIS
+       ========================================================= */
+
+    :root {
+      --principal: #8c6b52;
+      --principal-escuro: #684d3a;
+      --dourado: #c8a96b;
+      --creme: #f8f4ee;
+      --branco: #ffffff;
+      --texto: #3f3934;
+      --verde: #668568;
+      --vermelho: #b86b6b;
+      --sombra: 0 10px 35px rgba(0, 0, 0, 0.12);
+      --raio: 18px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      color: var(--texto);
+      background: var(--creme);
+      overflow-x: hidden;
+      position: relative;
+      min-height: 100vh;
+    }
+
+    button,
+    a {
+      font-family: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* =========================================================
+       FUNDO COM FOTOS (CORRIGIDO)
+       ========================================================= */
+
+    .background-gallery {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -10;
+      overflow: hidden;
+    }
+
+    .background-gallery::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        rgba(255, 255, 255, 0.20),
+        rgba(255, 255, 255, 0.35)
+      );
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 1fr;
+      height: 100%;
+      gap: 8px;
+      opacity: 0.65;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* =========================================================
+       TELA DO CONVITE
+       ========================================================= */
+
+    .convite {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 20px;
+      position: relative;
+    }
+
+    .convite-card {
+      width: min(850px, 100%);
+      min-height: 600px;
+      background: rgba(255,255,255,0.92);
+      border: 1px solid rgba(200,169,107,0.45);
+      box-shadow: var(--sombra);
+      border-radius: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 70px 35px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .convite-card::before,
+    .convite-card::after {
+      content: "❦";
+      position: absolute;
+      font-size: 100px;
+      color: var(--dourado);
+      opacity: 0.18;
+    }
+
+    .convite-card::before {
+      top: -20px;
+      left: 20px;
+    }
+
+    .convite-card::after {
+      bottom: -20px;
+      right: 20px;
+      transform: rotate(180deg);
+    }
+
+    .convite-conteudo {
+      max-width: 650px;
+    }
+
+    .pequeno {
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-size: 12px;
+      color: var(--principal);
+      margin-bottom: 20px;
+    }
+
+    .convite h1 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(42px, 9vw, 100px);
+      line-height: 0.9;
+      font-weight: 500;
+      color: var(--principal-escuro);
+      white-space: nowrap;
+    }
+
+    .ampersand {
+      color: var(--dourado);
+      font-style: italic;
+    }
+
+    .convite-data {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 28px;
+      margin: 25px 0;
+      color: var(--principal);
+    }
+
+    .convite-frase {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 22px;
+      font-style: italic;
+      margin-bottom: 35px;
+    }
+
+    .btn-principal {
+      border: none;
+      background: var(--principal);
+      color: white;
+      padding: 15px 30px;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 13px;
+      letter-spacing: 1px;
+      transition: 0.3s;
+    }
+
+    .btn-principal:hover {
+      background: var(--principal-escuro);
+      transform: translateY(-2px);
+    }
+
+    /* =========================================================
+       MENU
+       ========================================================= */
+
+    .menu {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.94);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(140,107,82,0.15);
+    }
+
+    .menu-container {
+      max-width: 1100px;
+      margin: auto;
+      min-height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 20px;
+    }
+
+    .menu button {
+      background: transparent;
+      border: none;
+      color: var(--texto);
+      padding: 12px 18px;
+      cursor: pointer;
+      border-radius: 30px;
+      font-size: 12px;
+      transition: 0.3s;
+    }
+
+    .menu button:hover,
+    .menu button.ativo {
+      background: var(--principal);
+      color: white;
+    }
+
+    /* =========================================================
+       CONTEÚDO
+       ========================================================= */
+
+    .conteudo {
+      max-width: 1100px;
+      margin: auto;
+      padding: 70px 20px;
+    }
+
+    .secao {
+      display: none;
+      animation: aparecer 0.5s ease;
+    }
+
+    .secao.ativa {
+      display: block;
+    }
+
+    @keyframes aparecer {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .titulo-secao {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .titulo-secao span {
+      display: block;
+      color: var(--dourado);
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+
+    .titulo-secao h2 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 52px;
+      font-weight: 500;
+      color: var(--principal-escuro);
+    }
+
+    .titulo-secao p {
+      margin-top: 10px;
+      color: #766d66;
+    }
+
+    /* =========================================================
+       CONFIRMAÇÃO
+       ========================================================= */
+
+    .lista-convidados {
+      max-width: 800px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+
+    /* BARRA DE PESQUISA DE CONVIDADOS */
+    .pesquisa-convidados {
+      max-width: 800px;
+      margin: 0 auto 14px;
+      position: relative;
+    }
+
+    .pesquisa-convidados input {
+      width: 100%;
+      border: 1px solid rgba(140,107,82,0.22);
+      background: rgba(255,255,255,0.96);
+      color: var(--texto);
+      padding: 14px 18px 14px 46px;
+      border-radius: 30px;
+      outline: none;
+      font-family: inherit;
+      font-size: 13px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+      transition: 0.2s;
+    }
+
+    .pesquisa-convidados input:focus {
+      border-color: var(--principal);
+      box-shadow: 0 5px 20px rgba(140,107,82,0.12);
+    }
+
+    .pesquisa-convidados::before {
+      content: "⌕";
+      position: absolute;
+      left: 18px;
+      top: 50%;
+      transform: translateY(-52%);
+      color: var(--principal);
+      font-size: 23px;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .pesquisa-resultado {
+      max-width: 800px;
+      margin: -4px auto 12px;
+      padding: 0 4px;
+      color: #817871;
+      font-size: 11px;
+    }
+
+    .convidado {
+      background: rgba(255,255,255,0.95);
+      padding: 17px 20px;
+      border-radius: var(--raio);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .status {
+      width: 38px;
+      height: 38px;
+      min-width: 38px;
+      border-radius: 50%;
+      background: #f2dede;
+      color: var(--vermelho);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .status.confirmado {
+      background: #dfeadf;
+      color: var(--verde);
+    }
+
+    .nome-convidado {
+      flex: 1;
+      font-weight: 500;
+    }
+
+    .btn-confirmar {
+      border: 1px solid var(--principal);
+      background: transparent;
+      color: var(--principal);
+      padding: 9px 15px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 11px;
+      transition: 0.3s;
+    }
+
+    .btn-confirmar:hover {
+      background: var(--principal);
+      color: white;
+    }
+
+    .btn-confirmar.confirmado {
+      background: var(--verde);
+      color: white;
+      border-color: var(--verde);
+    }
+
+
+    /* =========================================================
+       LISTA DE CONVIDADOS COM ROLAGEM PRÓPRIA
+       ========================================================= */
+    .lista-convidados-wrapper {
+      max-width: 800px;
+      margin: auto;
+      max-height: 520px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding: 6px 12px 6px 4px;
+      border-radius: var(--raio);
+      scrollbar-width: thin;
+      scrollbar-color: var(--principal) rgba(140,107,82,0.12);
+    }
+
+    .lista-convidados-wrapper::-webkit-scrollbar { width: 9px; }
+    .lista-convidados-wrapper::-webkit-scrollbar-track {
+      background: rgba(140,107,82,0.10);
+      border-radius: 20px;
+    }
+    .lista-convidados-wrapper::-webkit-scrollbar-thumb {
+      background: var(--principal);
+      border-radius: 20px;
+    }
+    .lista-convidados-wrapper::-webkit-scrollbar-thumb:hover {
+      background: var(--principal-escuro);
+    }
+
+    /* =========================================================
+       MODAL DO CÓDIGO DE CONFIRMAÇÃO
+       ========================================================= */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      background: rgba(40, 32, 27, 0.55);
+      backdrop-filter: blur(5px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .modal-overlay.aberto { display: flex; }
+    .modal {
+      width: min(430px, 100%);
+      background: white;
+      border-radius: 24px;
+      padding: 30px;
+      box-shadow: 0 20px 70px rgba(0,0,0,0.25);
+      position: relative;
+      text-align: center;
+      animation: modalEntrada 0.22s ease;
+    }
+    @keyframes modalEntrada {
+      from { opacity: 0; transform: translateY(15px) scale(0.98); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    .modal-fechar {
+      position: absolute;
+      top: 12px;
+      right: 15px;
+      width: 34px;
+      height: 34px;
+      border: none;
+      background: transparent;
+      color: #766d66;
+      font-size: 25px;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+    .modal-fechar:hover { background: #f6f1ea; }
+    .modal-icone { font-size: 35px; margin-bottom: 8px; }
+    .modal h3 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 32px;
+      color: var(--principal-escuro);
+      margin-bottom: 8px;
+    }
+    .modal p {
+      font-size: 12px;
+      line-height: 1.6;
+      color: #766d66;
+      margin-bottom: 20px;
+    }
+    .modal-codigo {
+      width: 100%;
+      padding: 14px 16px;
+      border: 1px solid rgba(140,107,82,0.30);
+      border-radius: 12px;
+      outline: none;
+      text-align: center;
+      font-size: 18px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--texto);
+      margin-bottom: 12px;
+    }
+    .modal-codigo:focus {
+      border-color: var(--principal);
+      box-shadow: 0 0 0 3px rgba(140,107,82,0.10);
+    }
+    .modal-mensagem {
+      min-height: 20px;
+      font-size: 12px;
+      margin-bottom: 12px;
+    }
+    .modal-mensagem.erro { color: var(--vermelho); }
+    .modal-mensagem.sucesso { color: var(--verde); }
+    .modal-acoes { display: flex; gap: 10px; justify-content: center; }
+    .btn-modal {
+      flex: 1;
+      border: none;
+      padding: 13px 16px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 12px;
+      transition: 0.2s;
+    }
+    .btn-modal.cancelar { background: #f1ece7; color: var(--texto); }
+    .btn-modal.confirmar { background: var(--principal); color: white; }
+    .btn-modal.confirmar:hover { background: var(--principal-escuro); }
+    .btn-modal:disabled { opacity: 0.6; cursor: wait; }
+    .status-carregando {
+      text-align: center;
+      padding: 30px;
+      color: #766d66;
+      font-size: 13px;
+    }
+
+    @media (max-width: 550px) {
+      .lista-convidados-wrapper { max-height: 470px; padding-right: 8px; }
+      .modal { padding: 26px 20px; }
+      .modal-acoes { flex-direction: column-reverse; }
+    }
+
+    /* =========================================================
+       PRESENTES
+       ========================================================= */
+
+    .pix-card {
+      width: min(420px, 100%);
+      margin: 0 auto;
+      background: rgba(255,255,255,0.97);
+      border-radius: var(--raio);
+      box-shadow: var(--sombra);
+      padding: 22px 24px;
+      text-align: center;
+      position: static;
+    }
+
+
+    .pix-card h3 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 30px;
+      color: var(--principal-escuro);
+      margin-bottom: 10px;
+    }
+
+    .pix-card p {
+      font-size: 12px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .pix-qrcode {
+      width: 180px;
+      height: 180px;
+      margin: 0 auto 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .pix-qrcode img,
+    .pix-qrcode canvas {
+      width: 180px !important;
+      height: 180px !important;
+    }
+
+
+    .pix-chave-container {
+      width: 100%;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+
+    .pix-chave-wrapper {
+      display: flex;
+      align-items: stretch;
+      gap: 8px;
+    }
+
+    .pix-chave {
+      flex: 1;
+      min-width: 0;
+      background: #f6f1ea;
+      padding: 12px 14px;
+      border-radius: 10px;
+      font-size: 11px;
+      word-break: break-all;
+      line-height: 1.5;
+      color: var(--texto);
+      border: 1px solid rgba(140,107,82,0.12);
+      text-align: left;
+    }
+
+    .btn-copiar-pix {
+      width: 45px;
+      min-width: 45px;
+      border: none;
+      background: var(--principal);
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 17px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.25s;
+    }
+
+    .btn-copiar-pix:hover {
+      background: var(--principal-escuro);
+      transform: translateY(-1px);
+    }
+
+    .btn-copiar-pix.copiado {
+      background: var(--verde);
+    }
+
+    .mensagem-pix {
+      min-height: 18px;
+      margin-top: 8px;
+      font-size: 11px;
+      color: var(--verde);
+    }
+
+    /* =========================================================
+       HOTÉIS
+       ========================================================= */
+
+    .lista-hoteis {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .hotel {
+      background: rgba(255,255,255,0.96);
+      border-radius: var(--raio);
+      overflow: hidden;
+      box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .hotel:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--sombra);
+    }
+
+    .hotel img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+    }
+
+    .hotel-conteudo {
+      padding: 20px;
+    }
+
+    .hotel h3 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 28px;
+      color: var(--principal-escuro);
+      margin-bottom: 10px;
+    }
+
+    .hotel p {
+      font-size: 12px;
+      line-height: 1.6;
+      color: #766d66;
+      margin-bottom: 10px;
+    }
+
+    .hotel a {
+      display: inline-block;
+      margin-top: 5px;
+      color: var(--principal);
+      font-size: 12px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .hotel a:hover {
+      text-decoration: underline;
+    }
+
+    /* =========================================================
+       RODAPÉ
+       ========================================================= */
+
+    footer {
+      text-align: center;
+      padding: 50px 20px;
+      background: rgba(255,255,255,0.85);
+      border-top: 1px solid rgba(140,107,82,0.12);
+    }
+
+    footer h2 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 40px;
+      color: var(--principal-escuro);
+    }
+
+    footer p {
+      font-size: 11px;
+      margin-top: 10px;
+      color: #817871;
+    }
+
+    /* =========================================================
+       RESPONSIVO
+       ========================================================= */
+
+    @media (max-width: 800px) {
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .menu-container {
+        overflow-x: auto;
+        justify-content: flex-start;
+        scrollbar-width: none;
+      }
+
+      .menu-container::-webkit-scrollbar {
+        display: none;
+      }
+
+      .menu button {
+        white-space: nowrap;
+      }
+
+      .convite-card {
+        min-height: 550px;
+      }
+
+      .presentes-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .pix-card {
+        position: static;
+      }
+
+      .lista-hoteis {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 550px) {
+
+      .conteudo {
+        padding: 50px 15px;
+      }
+
+      .titulo-secao h2 {
+        font-size: 42px;
+      }
+
+      .convite-card {
+        padding: 50px 20px;
+        min-height: 500px;
+      }
+
+      .convite-data {
+        font-size: 23px;
+      }
+
+      .convite-frase {
+        font-size: 19px;
+      }
+
+      .convidado {
+        padding: 12px;
+      }
+
+      .nome-convidado {
+        font-size: 13px;
+      }
+
+      .btn-confirmar {
+        padding: 8px 10px;
+      }
+
+      .lista-presentes {
+        grid-template-columns: 1fr;
+      }
+
+      .lista-hoteis {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================================================
+       FUNDO COM FOTOS
+       ========================================================= -->
+
+  <div class="background-gallery">
+    <div class="gallery-grid">
+
+      <img src="fotos/foto1.jpeg" alt="Foto do casal">
+      <img src="fotos/foto2.jpeg" alt="Foto do casal">
+      <img src="fotos/foto3.jpeg" alt="Foto do casal">
+      <img src="fotos/foto4.jpeg" alt="Foto do casal">
+      <img src="fotos/foto5.jpeg" alt="Foto do casal">
+      <img src="fotos/foto6.jpeg" alt="Foto do casal">
+      <img src="fotos/foto7.jpeg" alt="Foto do casal">
+      <img src="fotos/foto8.jpeg" alt="Foto do casal">
+
+    </div>
+  </div>
+
+
+  <!-- =========================================================
+       CONVITE
+       ========================================================= -->
+
+  <section class="convite" id="convite">
+
+    <div class="convite-card">
+
+      <div class="convite-conteudo">
+
+        <div class="pequeno">
+          Com muita alegria convidamos você
+        </div>
+
+        <h1>
+          Larissa
+          <span class="ampersand">&</span>
+          Rodrigo
+        </h1>
+
+        <div class="convite-data">
+          09 de Janeiro de 2027
+        </div>
+
+        <p class="convite-frase">
+          "O amor não consiste em olhar um para o outro,
+          mas sim em olhar juntos na mesma direção."
+        </p>
+
+        <button
+          class="btn-principal"
+          onclick="abrirSite()"
+        >
+          ABRIR CONVITE
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       MENU
+       ========================================================= -->
+
+  <nav class="menu" id="menu">
+
+    <div class="menu-container">
+
+      <button
+        class="ativo"
+        onclick="mostrarSecao('confirmacao', this)"
+      >
+        ✓ CONFIRMAÇÃO
+      </button>
+
+      <button
+        onclick="mostrarSecao('presentes', this)"
+      >
+        🎁 PRESENTES
+      </button>
+
+      <button
+        onclick="mostrarSecao('hoteis', this)"
+      >
+        🏨 HOTÉIS
+      </button>
+
+    </div>
+
+  </nav>
+
+
+  <!-- =========================================================
+       CONTEÚDO PRINCIPAL
+       ========================================================= -->
+
+  <main class="conteudo">
+
+
+    <!-- =======================================================
+         CONFIRMAÇÃO DE PRESENÇA
+         ======================================================= -->
+
+    <section
+      class="secao ativa"
+      id="confirmacao"
+    >
+
+      <div class="titulo-secao">
+
+        <span>♡</span>
+
+        <h2>Confirme sua presença</h2>
+
+        <p>
+          Encontre seu nome na lista e confirme sua presença.
+        </p>
+
+      </div>
+
+
+      <div class="pesquisa-convidados">
+        <input
+          id="pesquisaConvidados"
+          type="search"
+          placeholder="Digite o nome do convidado..."
+          autocomplete="off"
+          aria-label="Pesquisar convidado"
+          oninput="filtrarConvidados()"
+        >
+      </div>
+      <div class="pesquisa-resultado" id="pesquisaResultado"></div>
+
+      <div class="lista-convidados-wrapper">
+        <div class="lista-convidados" id="listaConvidados"></div>
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         PRESENTES
+         ======================================================= -->
+
+    <section
+      class="secao"
+      id="presentes"
+    >
+
+      <div class="titulo-secao">
+
+        <span>♡</span>
+
+        <h2>Sugestões de presentes</h2>
+
+        <p>
+          Sua presença já é o nosso maior presente,
+          mas caso queira nos presentear...
+        </p>
+
+      </div>
+
+
+      <div class="pix-card pix-centralizado">
+
+        <h3>Presente via Pix</h3>
+
+        <p>
+          Você pode utilizar o Pix através do QR Code abaixo
+          <br>
+          
+          ou copiar o código.
+        </p>
+
+        <div id="pixQRCode" class="pix-qrcode"></div>
+
+
+      <div class="pix-chave-container">
+        <div class="pix-chave-wrapper">
+          <div
+            class="pix-chave"
+            id="pixChave"
+          >
+            a1b2c3d4-e5f6-7890-abcd-1234567890ab
+          </div>
+
+          <button
+            type="button"
+            id="btnCopiarPix"
+            class="btn-copiar-pix"
+            onclick="copiarPix()"
+            aria-label="Copiar chave Pix"
+            title="Copiar chave Pix"
+          >
+            📋
+          </button>
+        </div>
+
+        <div
+          id="mensagemPix"
+          class="mensagem-pix"
+          aria-live="polite"
+        ></div>
+      </div>
+
+
+      </div>
+
+
+    </section>
+
+
+    <!-- =======================================================
+         HOTÉIS
+         ======================================================= -->
+
+    <section
+      class="secao"
+      id="hoteis"
+    >
+
+      <div class="titulo-secao">
+
+        <span>♡</span>
+
+        <h2>Sugestões de hospedagem</h2>
+
+        <p>
+          Algumas opções de hotéis para facilitar sua estadia.
+        </p>
+
+      </div>
+
+
+      <div
+        class="lista-hoteis"
+        id="listaHoteis"
+      >
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- MODAL DE CÓDIGO -->
+  <div class="modal-overlay" id="modalCodigo" onclick="fecharModalSeClicarFora(event)">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+      <button class="modal-fechar" type="button" onclick="fecharModal()" aria-label="Fechar">×</button>
+      <div class="modal-icone">💌</div>
+      <h3 id="modalTitulo">Confirmar presença</h3>
+      <p id="modalDescricao">Digite o código numérico de 6 dígitos recebido no convite para confirmar sua presença.</p>
+      <input
+        id="inputCodigo"
+        class="modal-codigo"
+        type="text"
+        inputmode="numeric"
+        pattern="[0-9]{6}"
+        maxlength="6"
+        autocomplete="off"
+        placeholder="000000"
+        oninput="this.value = this.value.replace(/\D/g, '').slice(0, 6)"
+        onkeydown="if(event.key === 'Enter') enviarCodigo()"
+      >
+      <div id="modalMensagem" class="modal-mensagem"></div>
+      <div class="modal-acoes">
+        <button class="btn-modal cancelar" type="button" onclick="fecharModal()">CANCELAR</button>
+        <button class="btn-modal confirmar" id="btnEnviarCodigo" type="button" onclick="enviarCodigo()">CONFIRMAR</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       RODAPÉ
+       ========================================================= -->
+
+  <footer>
+
+    <h2>Larissa & Rodrigo</h2>
+
+    <p>
+      09 de Janeiro de 2027 · Com amor, esperamos por você.
+    </p>
+
+  </footer>
+
+
+  <!-- =========================================================
+       JAVASCRIPT
+       ========================================================= -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script>
+    // =========================================================
+    // SUPABASE
+    // Cole aqui a URL e a chave publishable/anon do seu projeto.
+    // NUNCA coloque a service_role/secret key neste arquivo.
+    // =========================================================
+    const SUPABASE_URL = "https://zyotrwycbjpmrofnowjf.supabase.co";
+    const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_u2r_WIuAhuyCXF2RXDtQAQ_G2gxiqMj";
+
+    const SUPABASE_CONFIGURADO =
+      SUPABASE_URL.startsWith("https://") &&
+      !SUPABASE_URL.includes("COLE_AQUI") &&
+      SUPABASE_PUBLISHABLE_KEY &&
+      !SUPABASE_PUBLISHABLE_KEY.includes("COLE_AQUI");
+
+    const supabaseClient = SUPABASE_CONFIGURADO
+      ? window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY)
+      : null;
+
+    // =========================================================
+    // 250 CONVIDADOS DE TESTE
+    // No modo demonstração, os códigos são numéricos de 6 dígitos: 100001 ... 100250.
+    // =========================================================
+    const nomes = [
+      "João","Maria","Carlos","Fernanda","Lucas","Juliana","Roberto","Patrícia",
+      "Rafael","Camila","Gabriel","Amanda","Bruno","Mariana","Felipe","Beatriz",
+      "Gustavo","Larissa","Daniel","Isabela","André","Carolina","Marcelo","Bianca",
+      "Eduardo","Letícia","Thiago","Natália","Rodrigo","Renata","Vinícius","Aline",
+      "Leonardo","Vanessa","Diego","Priscila","Henrique","Sabrina","Matheus","Tatiane"
+    ];
+    const sobrenomes = [
+      "da Silva","Oliveira","Santos","Almeida","Souza","Pereira","Costa","Ferreira",
+      "Rodrigues","Martins","Gomes","Carvalho","Ribeiro","Lopes","Dias","Teixeira",
+      "Moreira","Mendes","Barbosa","Nunes","Cardoso","Moura","Correia","Araújo",
+      "Fernandes","Vieira","Pinto","Monteiro","Freitas","Cavalcanti"
+    ];
+
+    const convidadosDemo = Array.from({ length: 250 }, (_, i) => ({
+      id: i + 1,
+      nome: `${nomes[i % nomes.length]} ${sobrenomes[(i * 7) % sobrenomes.length]}`,
+      confirmado: false,
+      codigo: String(100000 + i).padStart(6, "0")
+    }));
+
+    let convidados = [];
+    let convidadoSelecionadoId = null;
+
+    const PIX_COPIA_COLA = "00020126580014BR.GOV.BCB.PIX01366251ed20-0500-48f7-85cc-d6f893c89be15204000053039865802BR5925Rodrigo Henrique Amaral A6009SAO PAULO621405103UsMPb6d9V63041D34";
+    document.getElementById("pixChave").textContent = PIX_COPIA_COLA;
+
+    function gerarQRCodePix() {
+      const elemento = document.getElementById("pixQRCode");
+
+      console.log("Iniciando geração do QR Code Pix...");
+
+      if (!elemento) {
+        console.error("ERRO: div #pixQRCode não encontrada.");
+        return;
+      }
+
+      if (typeof QRCode === "undefined") {
+        console.error("ERRO: biblioteca QRCode.js não carregou.");
+        return;
+      }
+
+      if (
+        !PIX_COPIA_COLA ||
+        PIX_COPIA_COLA === "COLE_AQUI_SEU_PIX_COPIA_E_COLA"
+      ) {
+        console.error("ERRO: você ainda não colocou o Pix Copia e Cola.");
+        return;
+      }
+
+      elemento.innerHTML = "";
+
+      try {
+        new QRCode(elemento, {
+          text: PIX_COPIA_COLA,
+          width: 180,
+          height: 180,
+          colorDark: "#000000",
+          colorLight: "#ffffff",
+          correctLevel: QRCode.CorrectLevel.M
+        });
+
+        console.log("QR Code Pix criado!");
+
+      } catch (erro) {
+        console.error("ERRO AO GERAR QR CODE PIX:", erro);
+      }
+    }
+
+
+
+
+    const hoteis = [
+      { nome: "Hotel Primavera", endereco: "Rua das Flores, 120 - Centro", site: "https://github.com/rodrigoamral", foto: "fotos/hotel1.jpg" },
+      { nome: "Hotel Jardim", endereco: "Av. Brasil, 850 - Centro", site: "https://www.exemplo.com", foto: "fotos/hotel2.jpg" },
+      { nome: "Pousada Bela Vista", endereco: "Rua da Serra, 45 - Bairro Alto", site: "https://www.exemplo.com", foto: "fotos/hotel3.jpg" },
+      { nome: "Hotel das Palmeiras", endereco: "Av. Principal, 500", site: "https://www.exemplo.com", foto: "fotos/hotel4.jpg" },
+      { nome: "Pousada Encanto", endereco: "Rua do Lago, 80", site: "https://www.exemplo.com", foto: "fotos/hotel5.jpg" },
+      { nome: "Hotel Imperial", endereco: "Praça Central, 10", site: "https://www.exemplo.com", foto: "fotos/hotel6.jpg" }
+    ];
+
+    async function carregarConvidados() {
+      const lista = document.getElementById("listaConvidados");
+
+      if (!SUPABASE_CONFIGURADO) {
+        convidados = [...convidadosDemo];
+        renderizarConvidados();
+        return;
+      }
+
+      lista.innerHTML = '<div class="status-carregando">Carregando lista de convidados...</div>';
+
+      const { data, error } = await supabaseClient
+        .from("convidados")
+        .select("id,nome,familia,confirmado")
+        .order("nome", { ascending: true });
+
+      if (error) {
+        console.error(error);
+        lista.innerHTML = `
+          <div class="status-carregando">
+            Não foi possível carregar a lista de convidados.<br>
+            Verifique a tabela, RLS e as configurações do Supabase.
+          </div>`;
+        return;
+      }
+
+      convidados = data || [];
+      renderizarConvidados();
+    }
+
+    async function copiarPix() {
+      const campo = document.getElementById("pixChave");
+      const botao = document.getElementById("btnCopiarPix");
+      const mensagem = document.getElementById("mensagemPix");
+
+      if (!campo || !botao || !mensagem) {
+        console.error("Elementos do Pix não encontrados.");
+        return;
+      }
+
+      const chave = campo.textContent.trim();
+
+      if (!chave) {
+        mensagem.textContent = "Chave Pix não configurada.";
+        return;
+      }
+
+      try {
+
+        // =========================================================
+        // MÉTODO PRINCIPAL
+        // =========================================================
+
+        if (navigator.clipboard && window.isSecureContext) {
+
+          await navigator.clipboard.writeText(chave);
+
+        } else {
+
+          // =======================================================
+          // MÉTODO ALTERNATIVO
+          // Funciona em ambientes onde Clipboard API não está disponível
+          // =======================================================
+
+          const areaTexto = document.createElement("textarea");
+
+          areaTexto.value = chave;
+
+          areaTexto.style.position = "fixed";
+          areaTexto.style.left = "-9999px";
+          areaTexto.style.top = "0";
+          areaTexto.style.opacity = "0";
+
+          document.body.appendChild(areaTexto);
+
+          areaTexto.focus();
+          areaTexto.select();
+
+          const sucesso = document.execCommand("copy");
+
+          document.body.removeChild(areaTexto);
+
+          if (!sucesso) {
+            throw new Error("Não foi possível copiar a chave Pix.");
+          }
+        }
+
+        // =========================================================
+        // SUCESSO
+        // =========================================================
+
+        botao.textContent = "✓";
+        botao.classList.add("copiado");
+
+        mensagem.textContent = "Chave Pix copiada!";
+
+        setTimeout(() => {
+          botao.textContent = "📋";
+          botao.classList.remove("copiado");
+          mensagem.textContent = "";
+        }, 2500);
+
+      } catch (erro) {
+
+        console.error("Erro ao copiar chave Pix:", erro);
+
+        mensagem.textContent =
+          "Não foi possível copiar automaticamente. Selecione a chave e copie manualmente.";
+      }
+    }
+
+
+    function normalizarTexto(texto) {
+      return String(texto ?? "")
+        // Remove caracteres de controle
+        .replace(/[\u0000-\u001F\u007F-\u009F]/g, "")
+        // Normaliza acentos
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        // Converte para minúsculas
+        .toLowerCase()
+        // Remove espaços extras
+        .trim()
+        // Limita o tamanho da pesquisa
+        .slice(0, 100);
+    }
+
+    function filtrarConvidados() {
+      const campo = document.getElementById("pesquisaConvidados");
+      const termo = normalizarTexto(campo.value);
+      renderizarConvidados(termo);
+    }
+
+    function renderizarConvidados(termoPesquisa = "") {
+      const lista = document.getElementById("listaConvidados");
+      const resultado = document.getElementById("pesquisaResultado");
+      lista.innerHTML = "";
+
+      const termo = normalizarTexto(termoPesquisa);
+      const convidadosFiltrados = termo
+        ? convidados.filter(convidado =>
+            normalizarTexto(convidado.nome).includes(termo) ||
+            normalizarTexto(convidado.familia).includes(termo)
+          )
+        : convidados;
+
+      if (convidadosFiltrados.length === 0) {
+        lista.innerHTML = `
+          <div class="status-carregando">
+            Nenhum convidado encontrado.<br>
+            Tente pesquisar por outro nome.
+          </div>`;
+        return;
+      }
+
+      convidadosFiltrados.forEach((convidado) => {
+        const div = document.createElement("div");
+        div.className = "convidado";
+
+        const status = document.createElement("div");
+        status.className = `status ${convidado.confirmado ? "confirmado" : ""}`;
+        status.textContent = convidado.confirmado ? "✓" : "X";
+
+        const nome = document.createElement("div");
+        nome.className = "nome-convidado";
+        nome.textContent = convidado.nome;
+
+        const botao = document.createElement("button");
+        botao.className = `btn-confirmar ${convidado.confirmado ? "confirmado" : ""}`;
+        botao.textContent = convidado.confirmado
+          ? "PRESENÇA CONFIRMADA"
+          : "CONFIRMAR PRESENÇA";
+        botao.onclick = () => abrirModalCodigo(convidado.id);
+
+        div.append(status, nome, botao);
+        lista.appendChild(div);
+      });
+    }
+
+    function abrirModalCodigo(id) {
+      const convidado = convidados.find(pessoa => pessoa.id === id);
+      if (!convidado) return;
+
+      convidadoSelecionadoId = id;
+
+      const confirmado = Boolean(convidado.confirmado);
+      document.getElementById("modalTitulo").textContent =
+        confirmado ? "Cancelar presença" : "Confirmar presença";
+
+      document.getElementById("modalDescricao").textContent =
+        confirmado
+          ? `Digite o mesmo código único de ${convidado.nome} para cancelar a confirmação.`
+          : `Digite o código único de ${convidado.nome} para confirmar a presença.`;
+
+      document.getElementById("btnEnviarCodigo").textContent =
+        confirmado ? "CANCELAR" : "CONFIRMAR";
+
+      document.getElementById("inputCodigo").value = "";
+      limparMensagemModal();
+      document.getElementById("modalCodigo").classList.add("aberto");
+
+      setTimeout(() => document.getElementById("inputCodigo").focus(), 50);
+    }
+
+    function fecharModal() {
+      document.getElementById("modalCodigo").classList.remove("aberto");
+      convidadoSelecionadoId = null;
+      document.getElementById("inputCodigo").value = "";
+      limparMensagemModal();
+    }
+
+    function fecharModalSeClicarFora(event) {
+      if (event.target.id === "modalCodigo") fecharModal();
+    }
+
+    function mostrarMensagemModal(texto, tipo = "erro") {
+      const mensagem = document.getElementById("modalMensagem");
+      mensagem.textContent = texto;
+      mensagem.className = `modal-mensagem ${tipo}`;
+    }
+
+    function limparMensagemModal() {
+      const mensagem = document.getElementById("modalMensagem");
+      mensagem.textContent = "";
+      mensagem.className = "modal-mensagem";
+    }
+
+    async function enviarCodigo() {
+      if (!convidadoSelecionadoId) return;
+
+      const input = document.getElementById("inputCodigo");
+
+      // Remove qualquer caractere que não seja número
+      const codigo = input.value.replace(/\D/g, "").slice(0, 6);
+
+      // Mantém o campo somente com números
+      input.value = codigo;
+
+      // =========================================================
+      // VALIDAÇÃO ANTES DE QUALQUER QUERY
+      // =========================================================
+
+      if (!/^\d{6}$/.test(codigo)) {
+        mostrarMensagemModal("Digite exatamente 6 números.");
+        input.focus();
+        return;
+      }
+
+      const botao = document.getElementById("btnEnviarCodigo");
+
+      botao.disabled = true;
+      limparMensagemModal();
+
+      try {
+
+        // =======================================================
+        // MODO DE TESTE — SEM SUPABASE
+        // =======================================================
+
+        if (!SUPABASE_CONFIGURADO) {
+
+          const convidado = convidados.find(
+            pessoa => pessoa.id === convidadoSelecionadoId
+          );
+
+          if (!convidado) {
+            throw new Error("Convidado não encontrado.");
+          }
+
+          if (convidado.codigo !== codigo) {
+            throw new Error("Código inválido para este convidado.");
+          }
+
+          convidado.confirmado = !convidado.confirmado;
+
+          renderizarConvidados(document.getElementById("pesquisaConvidados").value);
+
+          mostrarMensagemModal(
+            convidado.confirmado
+              ? "Presença confirmada com sucesso!"
+              : "Presença cancelada com sucesso!",
+            "sucesso"
+          );
+
+          setTimeout(fecharModal, 700);
+
+          return;
+        }
+
+        // =======================================================
+        // MODO REAL — SUPABASE
+        // Só chega aqui se o código tiver exatamente 6 números
+        // =======================================================
+
+        const { data, error } = await supabaseClient.rpc(
+          "confirmar_presenca",
+          {
+            p_id: convidadoSelecionadoId,
+            p_codigo: codigo
+          }
+        );
+
+        if (error) {
+          console.error(error);
+          throw new Error("Não foi possível validar o código.");
+        }
+
+        if (!data || !data.success) {
+          throw new Error(
+            data?.message || "Código inválido para este convidado."
+          );
+        }
+
+        const convidado = convidados.find(
+          pessoa => pessoa.id === convidadoSelecionadoId
+        );
+
+        if (convidado) {
+          convidado.confirmado = Boolean(data.confirmado);
+        }
+
+        renderizarConvidados(
+          document.getElementById("pesquisaConvidados").value
+        );
+
+        mostrarMensagemModal(
+          data.confirmado
+            ? "Presença confirmada com sucesso!"
+            : "Presença cancelada com sucesso!",
+          "sucesso"
+        );
+
+
+        setTimeout(fecharModal, 700);
+
+      } catch (erro) {
+
+        mostrarMensagemModal(
+          erro.message || "Não foi possível concluir a operação."
+        );
+
+      } finally {
+
+        botao.disabled = false;
+
+      }
+    }
+
+    function renderizarPresentes() {
+      const lista = document.getElementById("listaPresentes");
+      lista.innerHTML = "";
+      presentes.forEach((presente) => {
+        const div = document.createElement("div");
+        div.className = "presente";
+        div.innerHTML = `
+          <div class="presente-icone">${presente.icone}</div>
+          <div class="presente-info">
+            <h3>${presente.nome}</h3>
+            <p>${presente.descricao}</p>
+          </div>`;
+        lista.appendChild(div);
+      });
+    }
+
+    function renderizarHoteis() {
+      const lista = document.getElementById("listaHoteis");
+      lista.innerHTML = "";
+      hoteis.forEach((hotel) => {
+        const div = document.createElement("article");
+        div.className = "hotel";
+        div.innerHTML = `
+          <img src="${hotel.foto}" alt="${hotel.nome}">
+          <div class="hotel-conteudo">
+            <h3>${hotel.nome}</h3>
+            <p>📍 ${hotel.endereco}</p>
+            <a href="${hotel.site}" target="_blank" rel="noopener noreferrer">🌐 Visitar site</a>
+          </div>`;
+        lista.appendChild(div);
+      });
+    }
+
+    function mostrarSecao(id, botao) {
+      document.querySelectorAll(".secao").forEach(secao => secao.classList.remove("ativa"));
+      document.getElementById(id).classList.add("ativa");
+      document.querySelectorAll(".menu button").forEach(btn => btn.classList.remove("ativo"));
+      botao.classList.add("ativo");
+      window.scrollTo({
+        top: document.getElementById("menu").offsetTop,
+        behavior: "smooth"
+      });
+    }
+
+    function abrirSite() {
+      document.getElementById("menu").scrollIntoView({ behavior: "smooth" });
+    }
+
+    carregarConvidados();
+    gerarQRCodePix();
+    renderizarHoteis();
+    
+  </script>
+
+
+</body>
+</html>
